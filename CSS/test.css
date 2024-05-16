@@ -1,0 +1,39 @@
+
+.menu li {
+  display: inline-block;
+  width: 120px;
+  line-height: 40px;
+  position: relative;
+  background-color: aqua;
+}
+
+.menu ul {
+  background: #7FFFD4;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fdfbff;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: rgb(13, 175, 121);
+  color: #ffffff;
+}
+
+.menu li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  text-align: left;
+}
+
+.sub-menu li {
+  margin-left: 0 !important;
+}

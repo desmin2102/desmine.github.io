@@ -1,0 +1,93 @@
+@keyframes banner {
+    0% {background-color: red;font-size: 15px;}
+    25% {background-color: yellow;font-size: 25px;}
+    50% {background-color: blue;font-size: 35px;}
+    75% {background-color: green;font-size: 45px;}
+    100% {background-color: red;font-size: 55px;}
+}
+.banner {
+    text-align:center;
+    animation-name: banner;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+} 
+@keyframes change-image
+ {
+	0% {background-image: url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/9_1.jpg");}
+    25% {background-image: url("https://images.alphacoders.com/801/801638.png");}
+	50% {background-image: url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/9_1.jpg");}
+    75% {background-image: url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/7.jpg");}
+	100% {background-image: url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/9_1.jpg");}
+}
+.image {
+    border:10px solid rgb(255, 0, 0);
+    width:200px;
+    height:200px;
+   font-size: 30px;
+ color:yellow;
+ display:flex;
+  align-items:center;
+  justify-content: center;
+	background-image:url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/2.jpg");
+	animation-name: change-image;
+	animation-duration: 10s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+.image2
+{
+    width:200px;
+    height:200px;
+   font-size: 30px;
+   border-top-right-radius:20% ;
+   border-bottom-left-radius:20% ;
+ color:yellow;
+ display:flex;
+  align-items:center;
+  justify-content: center;
+    border:3px dashed rgb(250, 0, 0);
+    background-image:url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/7.jpg");
+}
+.image3
+{
+    width:200px;
+    height:200px;
+   font-size: 30px;
+   border-bottom-right-radius: 20% ;
+   border-top-left-radius:20% ;
+ color:yellow;
+ display:flex;
+  align-items:center;
+  justify-content: center;
+    border:3px dashed rgb(250, 0, 0);
+    background-image:url("https://znews-photo.zingcdn.me/w960/Uploaded/mdf_eioxrd/2021_07_06/2.jpg");
+}
+@keyframes roll
+ {
+	0% { transform: rotate(0deg);}
+    25% { transform: rotate(90deg);}
+	50% { transform: rotate(180deg);}
+    75% { transform: rotate(270deg);}
+	100% { transform: rotate(360deg);}
+ }
+.image4
+{
+    
+    width:200px;
+    height:200px;
+   font-size: 30px;
+ color:yellow;
+ display:flex;
+ align-items:center;
+ justify-content: center;
+ border:3px rgb(250, 0, 0);
+    background-image:url( "https://images.alphacoders.com/801/801638.png");
+    animation-name:roll;
+    animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
